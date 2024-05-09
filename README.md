@@ -19,13 +19,51 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
-
+#developed by: CHANDRU SM
+#register no:212223230034
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 
 
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 
 
 
@@ -33,17 +71,38 @@ ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 
 
 
 
 ```
-## Sample Input and Output
+## Output
+![Screenshot 2024-05-09 151600](https://github.com/Chandru0711/Search-Algorithms/assets/144979368/c6c8b390-bc27-4ed5-bd98-aeeab6f26ecb)
 
 
+![Screenshot 2024-05-09 151709](https://github.com/Chandru0711/Search-Algorithms/assets/144979368/48a762bb-2061-4441-9124-67de9d336872)
 
 
+![Screenshot 2024-05-09 151636](https://github.com/Chandru0711/Search-Algorithms/assets/144979368/9f97dc4e-ddbd-4be2-b120-65494815d3f1)
 
 
 ## Result
